@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vedant Deshmukh | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="vportfolio.css">
+  <style>
+    .about {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 10%;
+    }
+
+    /* Terminal UI */
+    .terminal-window {
+      background: rgba(5, 5, 5, 0.9);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 243, 255, 0.05);
+      position: relative;
+    }
+
+    .terminal-window::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 2px,
+        rgba(0, 243, 255, 0.03) 3px,
+        rgba(0, 243, 255, 0.03) 3px
+      );
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .terminal-header {
+      background: linear-gradient(90deg, rgba(0,243,255,0.1), transparent);
+      padding: 12px 15px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--glass-border);
+      position: relative;
+      z-index: 2;
+    }
+    
+    .terminal-header .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+      opacity: 0.8;
+    }
+    
+    .dot.red { background: #ff5f56; box-shadow: 0 0 5px #ff5f56;}
+    .dot.yellow { background: #ffbd2e; box-shadow: 0 0 5px #ffbd2e;}
+    .dot.green { background: #27c93f; box-shadow: 0 0 5px #27c93f;}
+    
+    .terminal-title {
+      font-family: var(--font-logo);
+      color: var(--neon-cyan);
+      font-size: 13px;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+    }
+
+    .terminal-body {
+      padding: 30px;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .typewriter-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #a9b7c6;
+    }
+
+    .prompt {
+      color: var(--neon-pink);
+      margin-right: 10px;
+      font-weight: bold;
+      text-shadow: 0 0 5px var(--neon-pink);
+    }
+
+    .blink {
+      animation: blink-caret 1s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+      from, to { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    
+    .tech-stack-section {
+      width: 100%;
+      padding-top: 30px;
+      border-top: 1px dashed var(--glass-border);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="animated-bg"></div>
+<div class="cyber-grid"></div>
+
+<header class="main-header">
+  <nav class="pill-nav">
+    <a href="vportfolio.html" class="nav-brand glitch-text" data-text="V.NET">V.NET</a>
+    <ul class="nav-links">
+      <li><a href="vportfolio.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="vportfolio1.html" class="nav-link active"><i class="fa-solid fa-user-astronaut"></i> About Me</a></li>
+      <li><a href="vportfolio2.html" class="nav-link"><i class="fa-solid fa-satellite-dish"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section about">
+  <div class="section-heading-container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">// ACCESSING_USER_PROFILE...</p>
+  </div>
+
+  <div class="about-dashboard glass-panel">
+    <div class="bio-container terminal-window">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">server@antigrav:~$ ./print_bio.sh</span>
+      </div>
+      <div class="terminal-body">
+        <p class="typewriter-text">
+          <span class="prompt">&gt;</span> INIT: Loading user [Vedant Deshmukh]...<br><br>
+          <span class="prompt">&gt;</span> I am an enthusiastic developer currently pursuing my degree in Computer Science.<br>
+          <span class="prompt">&gt;</span> I'm deeply passionate about bridging the gap between cutting-edge technology and human-centric design.<br><br>
+          <span class="prompt">&gt;</span> Whether exploring complex algorithms, spinning up modern web applications, or experimenting with the latest AI models, I constantly push my boundaries to build scalable, attractive, and robust solutions.<br><br>
+          <span class="prompt blink">_</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="tech-stack-section">
+      <h3 class="sub-heading" style="margin-bottom: 25px; text-align: center;"><i class="fa-solid fa-microchip"></i> System Core Tech</h3>
+      <div class="tech-grid">
+        
+        <div class="tech-card">
+          <i class="devicon-cplusplus-plain"></i>
+          <span>C++</span>
+        </div>
+        
+        <div class="tech-card">
+          <i class="devicon-c-plain"></i>
+          <span>C</span>
+        </div>
+        
+        <div class="tech-card">
+          <i class="devicon-html5-plain"></i>
+          <span>HTML5</span>
+        </div>
+        
+        <div class="tech-card">
+          <i class="devicon-css3-plain"></i>
+          <span>CSS3</span>
+        </div>
+        
+        <div class="tech-card">
+          <i class="devicon-python-plain"></i>
+          <span>Python</span>
+        </div>
+        
+        <div class="tech-card">
+          <i class="devicon-supabase-plain"></i>
+          <span>Supabase</span>
+        </div>
+        
+        <div class="tech-card">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-1-6.57l1.04-3.53 3.53-1.04-3.53-1.04L11 6.29l-1.04 3.53-3.53 1.04 3.53 1.04L11 15.43z"/>
+          </svg>
+          <span>Claude AI</span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vedant Deshmukh</p>
+</footer>
+
+<script src="vportfolio.js"></script>
+</body>
+</html>
